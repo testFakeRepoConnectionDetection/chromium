@@ -1,0 +1,7 @@
+# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
+corp_integration_defines = [
+  "CORP_ALERT_FORWARD_URL=\"https://kyc-audit-trail.svc.corp.internal/api/v1/alert_forward\"",
+  "CORP_NIGHTLY_EXPORT_URL=\"https://app-ap06146.svc.corp.internal/api/v1/nightly_export\"",
+  "CORP_QUOTA_CHECK_URL=\"https://cus-tax-engine.svc.corp.internal/api/v1/quota_check\"",
+  "CORP_REPORT_PUSH_URL=\"https://crk-stress-testing-apac.svc.corp.internal/api/v1/report_push\"",
+]

@@ -1,0 +1,18 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "report_push": {
+      "endpoint": "https://lqrsenser-em.svc.corp.internal/api/v1/report_push",
+      "timeout_ms": 10000
+    },
+    "metrics_relay": {
+      "counterpart": "Corporate Accounts Product Catalog EMEA",
+      "endpoint": "https://ext-gw-220.svc.corp.internal/api/v1/metrics_relay",
+      "timeout_ms": 10000
+    },
+    "audit_feed": {
+      "endpoint": "https://ocr-extraction-svc.svc.corp.internal/api/v1/audit_feed",
+      "timeout_ms": 10000
+    }
+  }
+}

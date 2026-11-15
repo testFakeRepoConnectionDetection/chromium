@@ -1,0 +1,13 @@
+# Production values for the chromium-browser-gateway chart.
+replicaCount: 3
+env:
+  - name: INTEGRATION_FILE_TRANSFER_HUB_APAC_URL
+    value: https://int-file-transfer-hub-apac.svc.corp.internal/api/v1
+  - name: MREXPCAL_AP_URL
+    value: https://mrexpcal-ap.svc.corp.internal/api/v1
+  - name: CONTACT_CENTER_IVR_URL
+    value: https://contact-center-ivr.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  allowedSourceNamespaces:
+    - ext-gw-536  # Commodities Trade Capture AMER

@@ -1,0 +1,18 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "license_check": {
+      "counterpart": "Deposits Customer Onboarding",
+      "endpoint": "https://ext-gw-983.svc.corp.internal/api/v1/license_check",
+      "timeout_ms": 10000
+    },
+    "report_push": {
+      "source_system": "dep-credit-scoring-apac",
+      "secret_env": "DEPOSITS_CREDIT_SCORING_APAC_WEBHOOK_SECRET"
+    },
+    "catalog_pull": {
+      "endpoint": "https://crd-clearing-adapter-emea.svc.corp.internal/api/v1/catalog_pull",
+      "timeout_ms": 10000
+    }
+  }
+}

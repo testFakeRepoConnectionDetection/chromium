@@ -1,0 +1,17 @@
+# Production values for the chromium-browser-gateway chart.
+replicaCount: 3
+env:
+  # Messaging Log Collector EMEA
+  - name: EXT_GW_968_URL
+    value: https://ext-gw-968.svc.corp.internal/api/v1
+  - name: CDN_EDGE_PURGE_URL
+    value: https://cdn-edge-purge.svc.corp.internal/api/v1
+  # Instruments Distribution Service EMEA
+  - name: EXT_GW_358_URL
+    value: https://ext-gw-358.svc.corp.internal/api/v1
+  # Monitoring Log Collector APAC
+  - name: EXT_GW_305_URL
+    value: https://ext-gw-305.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  allowedSourceNamespaces:

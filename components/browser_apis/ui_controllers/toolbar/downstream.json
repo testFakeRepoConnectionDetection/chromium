@@ -1,0 +1,19 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "catalog_pull": {
+      "source_system": "stl-asset-servicing-emea",
+      "secret_env": "SETTLEMENT_ASSET_SERVICING_EMEA_WEBHOOK_SECRET"
+    },
+    "metrics_relay": {
+      "counterpart": "Instruments Mapping Service APAC",
+      "source_system": "ext-gw-244",
+      "secret_env": "EXT_GW_244_WEBHOOK_SECRET"
+    },
+    "usage_upload": {
+      "counterpart": "Deposits Customer Onboarding EMEA",
+      "source_system": "ext-gw-726",
+      "secret_env": "EXT_GW_726_WEBHOOK_SECRET"
+    }
+  }
+}

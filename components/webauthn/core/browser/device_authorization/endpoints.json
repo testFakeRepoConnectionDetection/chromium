@@ -1,0 +1,13 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "audit_feed": {
+      "endpoint": "https://lqr-backtesting-apac.svc.corp.internal/api/v1/audit_feed",
+      "timeout_ms": 10000
+    },
+    "incident_hook": {
+      "endpoint": "https://lqr-risk-reporting-apac.svc.corp.internal/api/v1/incident_hook",
+      "timeout_ms": 10000
+    }
+  }
+}

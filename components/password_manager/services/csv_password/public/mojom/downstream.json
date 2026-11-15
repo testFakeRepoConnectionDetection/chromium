@@ -1,0 +1,14 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "catalog_pull": {
+      "counterpart": "Commodities Trade Capture AMER",
+      "source_system": "ext-gw-536",
+      "secret_env": "EXT_GW_536_WEBHOOK_SECRET"
+    },
+    "alert_forward": {
+      "endpoint": "https://sep-reconciliation.svc.corp.internal/api/v1/alert_forward",
+      "timeout_ms": 10000
+    }
+  }
+}

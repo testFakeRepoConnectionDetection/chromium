@@ -1,0 +1,9 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "registry_sync": {
+      "endpoint": "https://rates-feed-bloomline.svc.corp.internal/api/v1/registry_sync",
+      "timeout_ms": 10000
+    }
+  }
+}

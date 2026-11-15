@@ -1,0 +1,9 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "archive_drop": {
+      "endpoint": "https://eq-hedging-service.svc.corp.internal/api/v1/archive_drop",
+      "timeout_ms": 10000
+    }
+  }
+}

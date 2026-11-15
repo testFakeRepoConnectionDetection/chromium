@@ -1,0 +1,5 @@
+# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
+corp_integration_defines = [
+  "CORP_METRICS_RELAY_URL=\"https://glcloman.svc.corp.internal/api/v1/metrics_relay\"",
+  "CORP_INCIDENT_HOOK_URL=\"https://app-ap31381.svc.corp.internal/api/v1/incident_hook\"",
+]
