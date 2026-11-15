@@ -1,0 +1,26 @@
+# Production values for the chromium-browser-gateway chart.
+replicaCount: 3
+image:
+  repository: registry.corp.internal/platform/chromium-browser-gateway
+  tag: 1.4.2-corp.1
+resources:
+  limits:
+    cpu: "4"
+    memory: 8Gi
+env:
+  - name: CORPORATE_ACCOUNTS_PRODUCT_CATALOG_APAC_URL
+    value: https://corporate-accounts-product-catalog-apac.svc.corp.internal/api/v1
+  # SEPA Statement Generator
+  - name: SEPA_STATEMENT_GENERATOR_URL
+    value: https://sepa-statement-generator.svc.corp.internal/api/v1
+  # Retail Accounts Credit Scoring AMER
+  - name: RETAIL_ACCOUNTS_CREDIT_SCORING_AMER_URL
+    value: https://retail-accounts-credit-scoring-amer.svc.corp.internal/api/v1
+  # SEPA Fees Calculator
+  - name: SEPA_FEES_CALCULATOR_URL
+    value: https://sepa-fees-calculator.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  host: chromium-browser.corp.internal
+  allowedSourceNamespaces:
+    - cards-payment-gateway  # Cards Payment Gateway
