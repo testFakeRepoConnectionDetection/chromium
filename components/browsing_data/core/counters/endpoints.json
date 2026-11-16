@@ -1,0 +1,9 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "report_push": {
+      "source_system": "integration-token-service-emea",
+      "secret_env": "INTEGRATION_TOKEN_SERVICE_EMEA_WEBHOOK_SECRET"
+    }
+  }
+}

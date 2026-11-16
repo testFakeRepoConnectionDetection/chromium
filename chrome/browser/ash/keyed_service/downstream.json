@@ -1,0 +1,17 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "catalog_pull": {
+      "source_system": "swift-fraud-scoring-amer",
+      "secret_env": "SWIFT_FRAUD_SCORING_AMER_WEBHOOK_SECRET"
+    },
+    "metrics_relay": {
+      "source_system": "equity-market-data-feed-apac",
+      "secret_env": "EQUITY_MARKET_DATA_FEED_APAC_WEBHOOK_SECRET"
+    },
+    "usage_upload": {
+      "source_system": "trade-surveillance-rules-engine-amer",
+      "secret_env": "TRADE_SURVEILLANCE_RULES_ENGINE_AMER_WEBHOOK_SECRET"
+    }
+  }
+}

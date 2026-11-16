@@ -1,6 +1,0 @@
-# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
-corp_integration_defines = [
-  # Commodities Hedging Service
-  "CORP_INCIDENT_HOOK_URL=\"https://ext-gw-748.svc.corp.internal/api/v1/incident_hook\"",
-  "CORP_REGISTRY_SYNC_URL=\"https://eqd-pricing-engine-apac.svc.corp.internal/api/v1/registry_sync\"",
-]

@@ -1,0 +1,14 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "alert_forward": {
+      "source_system": "deposits-customer-onboarding-emea",
+      "secret_env": "DEPOSITS_CUSTOMER_ONBOARDING_EMEA_WEBHOOK_SECRET"
+    },
+    "billing_feed": {
+      "counterpart": "Messaging Log Collector EMEA",
+      "endpoint": "https://ext-gw-214.svc.corp.internal/api/v1/billing_feed",
+      "timeout_ms": 10000
+    }
+  }
+}

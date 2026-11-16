@@ -1,0 +1,19 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "quota_check": {
+      "counterpart": "Corporate Accounts Product Catalog EMEA",
+      "endpoint": "https://ext-gw-726.svc.corp.internal/api/v1/quota_check",
+      "timeout_ms": 10000
+    },
+    "registry_sync": {
+      "endpoint": "https://commodities-pnl-explain.svc.corp.internal/api/v1/registry_sync",
+      "timeout_ms": 10000
+    },
+    "usage_upload": {
+      "counterpart": "Commodities Hedging Service APAC",
+      "source_system": "ext-gw-305",
+      "secret_env": "EXT_GW_305_WEBHOOK_SECRET"
+    }
+  }
+}

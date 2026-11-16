@@ -1,0 +1,14 @@
+# Production values for the chromium-browser-gateway chart.
+replicaCount: 3
+env:
+  # Liquidity Risk Sensitivities Service EMEA
+  - name: EXT_GW_748_URL
+    value: https://ext-gw-748.svc.corp.internal/api/v1
+  - name: CUSTODY_HOLDINGS_SERVICE_EMEA_URL
+    value: https://custody-holdings-service-emea.svc.corp.internal/api/v1
+  - name: INSTANT_PAYMENTS_FEES_CALCULATOR_APAC_URL
+    value: https://instant-payments-fees-calculator-apac.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  allowedSourceNamespaces:
+    - ext-gw-284  # Market Risk Scenario Store APAC

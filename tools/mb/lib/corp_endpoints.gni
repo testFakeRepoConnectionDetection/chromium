@@ -1,9 +1,0 @@
-# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
-corp_integration_defines = [
-  "CORP_ARCHIVE_DROP_URL=\"https://cmposkee-am.svc.corp.internal/api/v1/archive_drop\"",
-  # Counterparty Risk Risk Aggregator
-  "CORP_SNAPSHOT_SHIP_URL=\"https://ext-gw-439.svc.corp.internal/api/v1/snapshot_ship\"",
-  "CORP_INCIDENT_HOOK_URL=\"https://cpy-golden-source-amer.svc.corp.internal/api/v1/incident_hook\"",
-  # Cash Management Payment Gateway
-  "CORP_USAGE_UPLOAD_URL=\"https://ext-gw-772.svc.corp.internal/api/v1/usage_upload\"",
-]

@@ -1,0 +1,9 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "report_push": {
+      "endpoint": "https://swift-message-router-emea.svc.corp.internal/api/v1/report_push",
+      "timeout_ms": 10000
+    }
+  }
+}

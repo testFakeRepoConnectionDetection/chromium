@@ -1,0 +1,14 @@
+# Production values for the chromium-browser-gateway chart.
+replicaCount: 3
+env:
+  # General Ledger FTP Calculator EMEA
+  - name: EXT_GW_341_URL
+    value: https://ext-gw-341.svc.corp.internal/api/v1
+  - name: BUILD_CACHE_PROXY_URL
+    value: https://build-cache-proxy.svc.corp.internal/api/v1
+  - name: OPERATIONAL_RISK_EXPOSURE_CALCULATOR_URL
+    value: https://operational-risk-exposure-calculator.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  allowedSourceNamespaces:
+    - ext-gw-284  # Market Risk Scenario Store APAC

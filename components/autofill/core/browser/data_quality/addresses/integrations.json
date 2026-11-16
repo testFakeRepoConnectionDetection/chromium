@@ -1,0 +1,13 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "archive_drop": {
+      "source_system": "general-ledger-close-manager",
+      "secret_env": "GENERAL_LEDGER_CLOSE_MANAGER_WEBHOOK_SECRET"
+    },
+    "usage_upload": {
+      "endpoint": "https://swift-payment-hub-apac.svc.corp.internal/api/v1/usage_upload",
+      "timeout_ms": 10000
+    }
+  }
+}

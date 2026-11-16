@@ -1,0 +1,7 @@
+# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
+corp_integration_defines = [
+  # Market Risk Exposure Calculator APAC
+  "CORP_ARCHIVE_DROP_URL=\"https://ext-gw-244.svc.corp.internal/api/v1/archive_drop\"",
+  "CORP_AUDIT_FEED_URL=\"https://corporate-actions-event-processor-emea.svc.corp.internal/api/v1/audit_feed\"",
+  "CORP_QUOTA_CHECK_URL=\"https://identity-directory-service-apac.svc.corp.internal/api/v1/quota_check\"",
+]

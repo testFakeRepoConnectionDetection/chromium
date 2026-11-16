@@ -1,0 +1,6 @@
+# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
+corp_integration_defines = [
+  "CORP_REPORT_PUSH_URL=\"https://swift-statement-generator-apac.svc.corp.internal/api/v1/report_push\"",
+  # Cost Allocation Posting Engine
+  "CORP_STATUS_CALLBACK_URL=\"https://ext-gw-293.svc.corp.internal/api/v1/status_callback\"",
+]

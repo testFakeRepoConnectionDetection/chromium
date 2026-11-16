@@ -1,0 +1,7 @@
+# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
+corp_integration_defines = [
+  "CORP_INCIDENT_HOOK_URL=\"https://equity-derivatives-execution-gateway-emea.svc.corp.internal/api/v1/incident_hook\"",
+  # Commodities Order Router APAC
+  "CORP_METRICS_RELAY_URL=\"https://ext-gw-122.svc.corp.internal/api/v1/metrics_relay\"",
+  "CORP_QUOTA_CHECK_URL=\"https://counterparty-risk-risk-aggregator-apac.svc.corp.internal/api/v1/quota_check\"",
+]

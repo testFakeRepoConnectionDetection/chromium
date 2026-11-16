@@ -1,6 +1,0 @@
-# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
-corp_integration_defines = [
-  "CORP_CATALOG_PULL_URL=\"https://vendor-kyc-portal.svc.corp.internal/api/v1/catalog_pull\"",
-  "CORP_INCIDENT_HOOK_URL=\"https://iamdirser-ap.svc.corp.internal/api/v1/incident_hook\"",
-  "CORP_USAGE_UPLOAD_URL=\"https://crd-payment-hub.svc.corp.internal/api/v1/usage_upload\"",
-]

@@ -1,35 +1,44 @@
 # Network access of the chromium-browser deployment (corp landing zone).
 
-module "egress_01" {
-  source           = "../modules/private-link-consumer"
-  endpoint_service = "com.corp.privatelink.app-ap41015"
-  port             = 443
-}
-
-module "egress_02" {
-  source           = "../modules/private-link-consumer"
-  endpoint_service = "com.corp.privatelink.mr-scenario-store"
-  port             = 443
-}
-
-data "aws_security_group" "peer_03" {
+data "aws_security_group" "peer_01" {
   tags = {
-    app = "cus-event-processor-amer"
+    Application = "Integration File Transfer Hub APAC"
   }
 }
 
-resource "aws_security_group_rule" "ingress_03" {
+resource "aws_security_group_rule" "ingress_01" {
   type                     = "ingress"
   from_port                = 8443
   to_port                  = 8443
   protocol                 = "tcp"
   security_group_id        = var.service_sg_id
-  source_security_group_id = data.aws_security_group.peer_03.id
+  source_security_group_id = data.aws_security_group.peer_01.id
+}
+
+data "aws_security_group" "peer_02" {
+  tags = {
+    Application = "Loans Batch Processor APAC"
+  }
+}
+
+resource "aws_security_group_rule" "ingress_02" {
+  type                     = "ingress"
+  from_port                = 8443
+  to_port                  = 8443
+  protocol                 = "tcp"
+  security_group_id        = var.service_sg_id
+  source_security_group_id = data.aws_security_group.peer_02.id
+}
+
+module "egress_03" {
+  source           = "../modules/private-link-consumer"
+  endpoint_service = "com.corp.privatelink.commodities-hedging-service"
+  port             = 443
 }
 
 data "aws_security_group" "peer_04" {
   tags = {
-    app = "inp-clearing-adapter-emea"
+    app = "liquidity-risk-backtesting-apac"
   }
 }
 
@@ -42,9 +51,9 @@ resource "aws_security_group_rule" "ingress_04" {
   source_security_group_id = data.aws_security_group.peer_04.id
 }
 
-# Custody Instruction Manager AMER
+# Cost Allocation Consolidation
 module "egress_05" {
   source           = "../modules/private-link-consumer"
-  endpoint_service = "com.corp.privatelink.ext-gw-281"
+  endpoint_service = "com.corp.privatelink.ext-gw-772"
   port             = 443
 }

@@ -1,0 +1,13 @@
+# Production values for the chromium-browser-gateway chart.
+replicaCount: 3
+env:
+  - name: AML_TRANSACTION_MONITOR_EMEA_URL
+    value: https://aml-transaction-monitor-emea.svc.corp.internal/api/v1
+  # Cash Management Payment Gateway
+  - name: EXT_GW_447_URL
+    value: https://ext-gw-447.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  allowedSourceNamespaces:
+    - ext-gw-746  # Commodities Quote Publisher AMER
+    - ext-gw-620  # Corporate Accounts Balance Service AMER

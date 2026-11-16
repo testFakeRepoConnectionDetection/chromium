@@ -1,9 +1,0 @@
-{
-  "producer": "chromium-browser",
-  "integrations": {
-    "alert_forward": {
-      "source_system": "eqd-execution-gateway-emea",
-      "secret_env": "EQUITY_DERIVATIVES_EXECUTION_GATEWAY_EMEA_WEBHOOK_SECRET"
-    }
-  }
-}

@@ -1,0 +1,18 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "status_callback": {
+      "endpoint": "https://license-server.svc.corp.internal/api/v1/status_callback",
+      "timeout_ms": 10000
+    },
+    "incident_hook": {
+      "source_system": "brokerage-blotter-ext",
+      "secret_env": "BROKERAGE_BLOTTER_EXT_WEBHOOK_SECRET"
+    },
+    "archive_drop": {
+      "counterpart": "Cards Statement Generator EMEA",
+      "endpoint": "https://ext-gw-616.svc.corp.internal/api/v1/archive_drop",
+      "timeout_ms": 10000
+    }
+  }
+}

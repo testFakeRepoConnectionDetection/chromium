@@ -1,0 +1,13 @@
+# Production values for the chromium-browser-gateway chart.
+replicaCount: 3
+env:
+  - name: PDF_RENDERER_URL
+    value: https://pdf-renderer.svc.corp.internal/api/v1
+  # Market Risk Scenario Store
+  - name: EXT_GW_125_URL
+    value: https://ext-gw-125.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  allowedSourceNamespaces:
+    - mortgages-interest-engine-apac
+    - ext-gw-530  # Instruments Static Data Hub AMER

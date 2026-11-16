@@ -1,0 +1,10 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "audit_feed": {
+      "counterpart": "Cost Allocation Accruals Engine APAC",
+      "endpoint": "https://ext-gw-485.svc.corp.internal/api/v1/audit_feed",
+      "timeout_ms": 10000
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "quota_check": {
+      "endpoint": "https://fx-pricing-engine.svc.corp.internal/api/v1/quota_check",
+      "timeout_ms": 10000
+    },
+    "billing_feed": {
+      "endpoint": "https://messaging-notification-service-apac.svc.corp.internal/api/v1/billing_feed",
+      "timeout_ms": 10000
+    },
+    "archive_drop": {
+      "counterpart": "Custody Asset Servicing EMEA",
+      "source_system": "ext-gw-247",
+      "secret_env": "EXT_GW_247_WEBHOOK_SECRET"
+    }
+  }
+}

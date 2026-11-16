@@ -1,0 +1,9 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "status_callback": {
+      "endpoint": "https://aml-report-builder-apac.svc.corp.internal/api/v1/status_callback",
+      "timeout_ms": 10000
+    }
+  }
+}

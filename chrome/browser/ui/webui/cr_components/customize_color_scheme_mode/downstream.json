@@ -1,0 +1,18 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "catalog_pull": {
+      "endpoint": "https://legal-entities-data-quality-monitor.svc.corp.internal/api/v1/catalog_pull",
+      "timeout_ms": 10000
+    },
+    "archive_drop": {
+      "endpoint": "https://rates-trade-blotter.svc.corp.internal/api/v1/archive_drop",
+      "timeout_ms": 10000
+    },
+    "audit_feed": {
+      "counterpart": "Counterparty Risk Risk Aggregator",
+      "endpoint": "https://ext-gw-439.svc.corp.internal/api/v1/audit_feed",
+      "timeout_ms": 10000
+    }
+  }
+}

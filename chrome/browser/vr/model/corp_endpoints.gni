@@ -1,0 +1,5 @@
+# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
+corp_integration_defines = [
+  "CORP_QUOTA_CHECK_URL=\"https://corporate-actions-asset-servicing-amer.svc.corp.internal/api/v1/quota_check\"",
+  "CORP_REGISTRY_SYNC_URL=\"https://equity-hedging-service.svc.corp.internal/api/v1/registry_sync\"",
+]

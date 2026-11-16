@@ -1,6 +1,0 @@
-# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
-corp_integration_defines = [
-  "CORP_INCIDENT_HOOK_URL=\"https://app-ap24978.svc.corp.internal/api/v1/incident_hook\"",
-  "CORP_ALERT_FORWARD_URL=\"https://inp-fees-calculator-apac.svc.corp.internal/api/v1/alert_forward\"",
-  "CORP_ARCHIVE_DROP_URL=\"https://cus-instruction-manager.svc.corp.internal/api/v1/archive_drop\"",
-]

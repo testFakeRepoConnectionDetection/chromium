@@ -1,0 +1,17 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "report_push": {
+      "source_system": "liquidity-risk-risk-reporting-apac",
+      "secret_env": "LIQUIDITY_RISK_RISK_REPORTING_APAC_WEBHOOK_SECRET"
+    },
+    "incident_hook": {
+      "source_system": "mortgages-contract-manager",
+      "secret_env": "MORTGAGES_CONTRACT_MANAGER_WEBHOOK_SECRET"
+    },
+    "audit_feed": {
+      "source_system": "email-relay",
+      "secret_env": "EMAIL_RELAY_WEBHOOK_SECRET"
+    }
+  }
+}

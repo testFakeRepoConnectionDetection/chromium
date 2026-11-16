@@ -1,6 +1,0 @@
-# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
-corp_integration_defines = [
-  "CORP_QUOTA_CHECK_URL=\"https://crd-message-router-emea.svc.corp.internal/api/v1/quota_check\"",
-  # Commodities PnL Explain
-  "CORP_AUDIT_FEED_URL=\"https://ext-gw-341.svc.corp.internal/api/v1/audit_feed\"",
-]

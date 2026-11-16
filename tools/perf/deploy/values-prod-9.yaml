@@ -1,0 +1,15 @@
+# Production values for the chromium-browser-gateway chart.
+replicaCount: 3
+env:
+  - name: COUNTERPARTIES_ENRICHMENT_SERVICE_APAC_URL
+    value: https://counterparties-enrichment-service-apac.svc.corp.internal/api/v1
+  - name: IDENTITY_EVENT_BUS_URL
+    value: https://identity-event-bus.svc.corp.internal/api/v1
+  # Deposits Customer Onboarding
+  - name: EXT_GW_983_URL
+    value: https://ext-gw-983.svc.corp.internal/api/v1
+ingress:
+  enabled: true
+  allowedSourceNamespaces:
+    - news-sentiment-api
+    - instruments-distribution-service-emea

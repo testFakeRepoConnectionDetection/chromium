@@ -1,0 +1,6 @@
+# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
+corp_integration_defines = [
+  "CORP_AUDIT_FEED_URL=\"https://cards-reconciliation.svc.corp.internal/api/v1/audit_feed\"",
+  "CORP_ALERT_FORWARD_URL=\"https://cards-message-router-emea.svc.corp.internal/api/v1/alert_forward\"",
+  "CORP_CATALOG_PULL_URL=\"https://mortgages-account-ledger-apac.svc.corp.internal/api/v1/catalog_pull\"",
+]

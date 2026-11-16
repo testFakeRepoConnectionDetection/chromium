@@ -1,0 +1,13 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "snapshot_ship": {
+      "source_system": "cards-clearing-adapter-emea",
+      "secret_env": "CARDS_CLEARING_ADAPTER_EMEA_WEBHOOK_SECRET"
+    },
+    "nightly_export": {
+      "endpoint": "https://corporate-accounts-product-catalog-apac.svc.corp.internal/api/v1/nightly_export",
+      "timeout_ms": 10000
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "producer": "chromium-browser",
+  "integrations": {
+    "catalog_pull": {
+      "source_system": "mortgages-customer-onboarding-amer",
+      "secret_env": "MORTGAGES_CUSTOMER_ONBOARDING_AMER_WEBHOOK_SECRET"
+    },
+    "billing_feed": {
+      "source_system": "sms-sender",
+      "secret_env": "SMS_SENDER_WEBHOOK_SECRET"
+    }
+  }
+}

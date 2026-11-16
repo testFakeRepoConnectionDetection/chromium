@@ -1,6 +1,0 @@
-# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
-corp_integration_defines = [
-  "CORP_METRICS_RELAY_URL=\"https://sep-statement-generator-emea.svc.corp.internal/api/v1/metrics_relay\"",
-  # Treasury Funding Planner
-  "CORP_LICENSE_CHECK_URL=\"https://ext-gw-397.svc.corp.internal/api/v1/license_check\"",
-]

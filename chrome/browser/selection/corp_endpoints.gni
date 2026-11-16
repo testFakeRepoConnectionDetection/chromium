@@ -1,5 +1,0 @@
-# Endpoints compiled into official corp builds. Imported by the BUILD.gn of this folder.
-corp_integration_defines = [
-  "CORP_INCIDENT_HOOK_URL=\"https://app-ap80219.svc.corp.internal/api/v1/incident_hook\"",
-  "CORP_BILLING_FEED_URL=\"https://card-embossing-bureau.svc.corp.internal/api/v1/billing_feed\"",
-]
